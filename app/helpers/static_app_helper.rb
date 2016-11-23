@@ -1,0 +1,2 @@
+module StaticAppHelper
+end

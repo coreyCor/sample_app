@@ -2,20 +2,20 @@
 <html>
 <head>
   <title>SampleApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+ 
 </head>
 <body>
 <nav>
-<ul>
-<ll>Home</li>
-<li>about</li>
-<li>Contact</li>
-<li>More</li>
-</ul>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
 </nav>
 <%= yield %>
+<footer>
+  &copy; 2015 Bike Berlin
+</footer>
 
 </body>
 </html>
