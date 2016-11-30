@@ -13,20 +13,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container">
-  <nav>
-    <ul>
-     <li>Home</li>
-     <li>About</li>
-     <li>Contact</li>
-   </ul>
-  </nav>
+<nav>
+ <div class="container">
+ <ul class="nav nav-tabs">
+   <li role="presentation"><a href="http://localhost:3000/static_pages/index">Home</a></li>
+   <li role="presentation"><a href="http://localhost:3000/static_pages/about">About Us</a></li>
+   <li role="presentation"><a href="http://localhost:3000/static_pages/contact">Contact</a></li>
+ </ul>
+</nav>
  <%= yield %>
   <hr class="footer_starts">
   <footer>
     <p>CoreyDesigns&copy2016</p>
   </footer>
-</div>
+</div><!--container class-->
 </body>
 </html>
 

@@ -26,7 +26,7 @@
 
 
 
-.cor {
+.central_img {
 	display: block;
 	height: 40%;
 	width: 40%;
@@ -96,7 +96,7 @@ li {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: #000000;
 }
 
 
@@ -104,7 +104,7 @@ a {
 
 
 .footer_starts {
-	border: .1px solid #ccc;
+	border: 4px double #ccc;
 	width: 50%;
 }
 
@@ -117,3 +117,15 @@ a {
 	
 
 }
+
+
+
+/*li::first-letter  {
+	font-family: something scc;
+}*/
+
+ li a:hover {
+	color: #2cc293;
+}
+
+
