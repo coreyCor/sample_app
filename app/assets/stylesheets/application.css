@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -6,10 +7,113 @@
  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
  *
  *= require_tree .
  *= require_self
  */
+
+ .contact_info {
+ 	font-family: courier, georgian, Helvetica;
+ }
+
+.img-responsive {
+	border: 2px solid black;
+}
+
+
+
+
+.cor {
+	display: block;
+	height: 40%;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+h1, 
+h2 {
+	font-family: Amatic SC, courier;
+	text-align: center;
+	font-weight: 600;
+	color : white;
+	 text-shadow: 2px 2px #000000;
+}
+
+
+
+
+p {
+	text-align: center ;
+
+}
+
+
+
+
+
+footer {
+	text-align: center;
+	margin-top: 1%;
+	font-family: courier;
+	color: #000000;
+	font-size: 1.2em;
+}
+
+
+
+
+
+li {
+	display: inline-block;
+	padding: 20px;
+	font-family: Amatic SC, courier;
+	font-size: 2em;
+	font-weight: 700;
+	color: #000000;
+}
+	
+
+
+
+
+#smth {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+
+.footer_starts {
+	border: .1px solid #ccc;
+	width: 50%;
+}
+
+
+
+
+
+#about_par {
+	font-family: courier, georgian , Helvetica;
+	
+
+}
