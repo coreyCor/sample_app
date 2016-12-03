@@ -45,7 +45,7 @@ h2 {
 	text-align: center;
 	font-weight: 600;
 	color : white;
-	 text-shadow: 2px 2px #000000;
+	text-shadow: 2px 2px #000000;
 }
 
 
@@ -61,7 +61,7 @@ p {
 
 
 footer {
-	text-align: center;
+	
 	margin-top: 1%;
 	font-family: courier;
 	color: #000000;
@@ -76,22 +76,26 @@ li {
 	display: inline-block;
 	padding: 10px;
 	font-family: Amatic SC, courier;
-	font-size: 2em;
-	font-weight: 700;
+	font-size: 2.3em;
+	font-weight: 900;
+	text-shadow: 2px 2px white;
+	
 	
 }
 	
 
 body {
-	background-color: #000
+	background-color: #afafaf;
+
 }
+
 
 
 #glyph {
 	color: white;
 }
 
-#smth {
+#smthr {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -99,11 +103,9 @@ body {
 
 
 
-
-
 a {
 	text-decoration: none;
-	color: #ffffff;
+	color: #000000;
 }
 
 
@@ -111,7 +113,7 @@ a {
 
 
 .footer_starts {
-	border: 4px double #ccc;
+	border: 4px double white;
 	width: 50%;
 }
 
@@ -121,8 +123,8 @@ a {
 
 #about_par {
 	font-family: courier, georgian , Helvetica;
-	color: #ffffff;
-	
+	color: #000000;
+	margin-bottom: 5%;
 
 }
 
@@ -133,12 +135,15 @@ a {
 }*/
 
  li a:hover {
-	color: teal;
+	color: #000000;
+
+
 }
 
 
 .foot_comp {
 	font-size: .80em;
-	color: teal;
+	color: #000000;
+	padding: 10%;
 
 }
