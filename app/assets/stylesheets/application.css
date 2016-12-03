@@ -17,6 +17,7 @@
 
  .contact_info {
  	font-family: courier, georgian, Helvetica;
+ 	font-weight: 200;
  	
  }
 
@@ -92,7 +93,7 @@ body {
 
 
 #glyph {
-	color: white;
+	color: #000;
 }
 
 #smthr {
