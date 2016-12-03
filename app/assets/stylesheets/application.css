@@ -17,6 +17,7 @@
 
  .contact_info {
  	font-family: courier, georgian, Helvetica;
+ 	color: #ffffff;
  }
 
 .img-responsive {
@@ -73,16 +74,22 @@ footer {
 
 li {
 	display: inline-block;
-	padding: 20px;
+	padding: 10px;
 	font-family: Amatic SC, courier;
 	font-size: 2em;
 	font-weight: 700;
-	color: #000000;
+	
 }
 	
 
+body {
+	background-color: #000
+}
 
 
+#glyph {
+	color: white;
+}
 
 #smth {
 	display: block;
@@ -96,7 +103,7 @@ li {
 
 a {
 	text-decoration: none;
-	color: #000000;
+	color: #ffffff;
 }
 
 
@@ -114,6 +121,7 @@ a {
 
 #about_par {
 	font-family: courier, georgian , Helvetica;
+	color: #ffffff;
 	
 
 }
@@ -125,11 +133,12 @@ a {
 }*/
 
  li a:hover {
-	color: #2cc293;
+	color: teal;
 }
 
 
 .foot_comp {
 	font-size: .80em;
+	color: teal;
 
 }
