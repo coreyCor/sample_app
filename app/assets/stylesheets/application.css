@@ -48,10 +48,16 @@ h2 {
 	color : white;
 	text-shadow: 2px 2px #000000;
 
+
 }
 
 h1 {
 	margin-top: 15%;
+}
+
+h2 {
+	margin-bottom: 5%;
+
 }
 
 
@@ -121,6 +127,7 @@ a {
 .footer_starts {
 	border: 4px double white;
 	width: 100%;
+	margin-top: 10%;
 }
 
 
@@ -150,7 +157,7 @@ a {
 .foot_comp {
 	font-size: .80em;
 	color: #000000;
-	margin-top: 15%;
+	margin-top:;
 
 }
 
