@@ -14,12 +14,32 @@
  *= require_tree .
  *= require_self
  */
+body {
+	background-color: #afafaf;
+
+}
+
+
+.navbar-inverse {
+	background-color: #ccc;
+	box-shadow: 0 0 8px 0 black;
+	border-radius: 0px;
+
+}
+
+
+ li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
 
  p.contact_info {
  	font-family: courier, georgian, Helvetica;
  	margin-top: 3%;
  	
  }
+
 
 .img-responsive {
 	border: 2px solid black;
@@ -70,20 +90,6 @@ p {
 
 
 
-
-
-footer {
-	
-	margin-top: 1%;
-	font-family: courier;
-	color: #000000;
-	font-size: 1.2em;
-}
-
-
-
-
-
 li {
 	display: inline-block;
 	padding: 5px;
@@ -97,13 +103,6 @@ li {
 }
 	
 
-body {
-	background-color: #afafaf;
-
-}
-
-
-
 #glyph {
 	color: #000;
 }
@@ -112,6 +111,7 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 5%;
 }
 
 
@@ -124,12 +124,6 @@ a {
 
 
 
-
-.footer_starts {
-	border: 4px double white;
-	width: 100%;
-	margin-top: 10%;
-}
 
 
 
@@ -149,9 +143,11 @@ a {
 	font-family: something scc;
 }*/
 
- li a:hover {
-	color: #000;
-	text-decoration: none;
+
+.footer_starts {
+	border: 4px double white;
+	width: 100%;
+	margin-top: 10%;
 }
 
 
@@ -160,11 +156,20 @@ a {
 	color: #000000;
 	margin-top:;
 
+} 
+
+
+footer {
+	
+	margin-top: 1%;
+	font-family: courier;
+	color: #000000;
+	font-size: 1.2em;
 }
 
-.navbar-inverse {
-	background-color: #ccc;
-	box-shadow: 0 0 8px 0 black;
-	border-radius: 0px;
 
-}
+
+
+
+
+
