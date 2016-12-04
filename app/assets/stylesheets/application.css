@@ -15,9 +15,9 @@
  *= require_self
  */
 
- .contact_info {
+ p.contact_info {
  	font-family: courier, georgian, Helvetica;
- 	font-weight: 200;
+ 	margin-top: 3%;
  	
  }
 
@@ -47,8 +47,12 @@ h2 {
 	font-weight: 600;
 	color : white;
 	text-shadow: 2px 2px #000000;
+
 }
 
+h1 {
+	margin-top: 15%;
+}
 
 
 
@@ -75,12 +79,13 @@ footer {
 
 li {
 	display: inline-block;
-	padding: 10px;
+	padding: 5px;
 	font-family: Amatic SC, courier;
 	font-size: 2.3em;
-	font-weight: 900;
+	font-weight: 700;
 	text-shadow: 2px 2px white;
-	
+	margin-left: 3%;
+
 	
 }
 	
@@ -106,7 +111,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #000000;
+	color: black;
 }
 
 
@@ -115,7 +120,7 @@ a {
 
 .footer_starts {
 	border: 4px double white;
-	width: 50%;
+	width: 100%;
 }
 
 
@@ -126,6 +131,7 @@ a {
 	font-family: courier, georgian , Helvetica;
 	color: #000000;
 	margin-bottom: 5%;
+	
 
 }
 
@@ -136,15 +142,21 @@ a {
 }*/
 
  li a:hover {
-	color: #000000;
-
-
+	color: #000;
+	text-decoration: none;
 }
 
 
 .foot_comp {
 	font-size: .80em;
 	color: #000000;
-	padding: 10%;
+	margin-top: 15%;
+
+}
+
+.navbar-inverse {
+	background-color: #ccc;
+	box-shadow: 0 0 8px 0 black;
+	border-radius: 0px;
 
 }
