@@ -15,22 +15,43 @@
  *= require_self
  */
 body {
-	background-color: #afafaf;
+	background-color: #adaaaa;
 
 }
 
 
 .navbar-inverse {
-	background-color: #ccc;
+	background-color: black;
 	box-shadow: 0 0 8px 0 black;
 	border-radius: 0px;
+	z-index: 1;
+	opacity: 0.8;
 
 }
 
 
- li a:hover {
-	color: #000;
+ nav li a:hover {
+	color: white;
 	text-decoration: none;
+}
+
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+
+ nav li {
+	display: inline-block;
+	padding: 1px;
+	font-family: Amatic SC, courier;
+	font-size: 2.3em;
+	font-weight: 700;
+	margin-left: 3%;
+	
+
+	
 }
 
 
@@ -42,7 +63,8 @@ body {
 
 
 .img-responsive {
-	border: 2px solid black;
+	border: 1px solid black;
+	box-shadow: 0 0 8px 0 black;
 }
 
 
@@ -66,7 +88,7 @@ h2 {
 	font-family: Amatic SC, courier;
 	text-align: center;
 	font-weight: 600;
-	color : white;
+	color: white;
 	text-shadow: 2px 2px #000000;
 
 
@@ -90,17 +112,6 @@ p {
 
 
 
-li {
-	display: inline-block;
-	padding: 5px;
-	font-family: Amatic SC, courier;
-	font-size: 2.3em;
-	font-weight: 700;
-	text-shadow: 2px 2px white;
-	margin-left: 3%;
-
-	
-}
 	
 
 #glyph {
@@ -116,10 +127,6 @@ li {
 
 
 
-a {
-	text-decoration: none;
-	color: black;
-}
 
 
 
