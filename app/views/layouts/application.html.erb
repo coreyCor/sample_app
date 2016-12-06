@@ -2,8 +2,6 @@
 <html>
 <head>
   <title>Bike | Berlin</title>
-  
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -12,24 +10,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
    <%= action_cable_meta_tag %>
-</head>
+ </head>
 <body>
-
- <nav class="navbar navbar-inverse navbar-fixed-top">
-  
-   <li class="nav_li"><a href="https://bikeberlin123.herokuapp.com/">Home</a></li>
-   <li class="nav_li"><a href="https://bikeberlin123.herokuapp.com/static_pages/about">About Us</a></li>
-   <li class="nav_li"=""><a href="https://bikeberlin123.herokuapp.com/static_pages/contact">Contact</a></li>
-</nav>
- <div class="container" id="body_color">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <li class="nav_li"><a href="https://bikeberlin123.herokuapp.com/">Home</a></li>
+    <li class="nav_li"><a href="https://bikeberlin123.herokuapp.com/static_pages/about">About Us</a></li>
+    <li class="nav_li"=""><a href="https://bikeberlin123.herokuapp.com/static_pages/contact">Contact</a></li>
+  </nav>
+<div class="container" id="body_color">
  <%= yield %>
- 
   <hr class="footer_starts">
   <footer>
     <p class="foot_comp">CoreyDesigns&copy2016</p>
   </footer>
- </div><!--container class-->
- </div>
+</div>
 </body>
 </html>
 
