@@ -18,3 +18,95 @@
 	color: teal;
 	font-size: 1.5em;
 }
+
+.show_background {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height: 300px;
+	width: 300px;
+	background-color: black;
+	color: white;
+	border: 3px solid teal;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px 0 black;
+}
+
+.showpage_links  {
+font-size: 2em;
+font-family: Amatic Sc;
+font-weight: 600;
+text-align: center;
+
+}
+
+.show_page-words {
+	
+	color: black;
+	font-family: Amatic SC, courier;
+	font-size: 2em;
+	font-weight : 600;
+}
+
+
+.showpage_links a {
+	background-color: white;
+	padding: 7px;
+	border-radius: 50%;
+	border: 3px solid teal;
+}
+
+.description {
+	margin-top: 2%;
+
+}
+
+.showpage_links a:hover {
+	text-decoration: none;
+}
+
+td a {
+	background-color: white;
+	padding: 7px;
+	border-radius: 5px;
+	border: 2px solid black;
+	margin-bottom: 2%;
+
+	}
+
+td a:hover{
+	text-decoration: none;
+	}
+
+table  tr {
+	margin-top: 2%;
+	}
+
+.new-product-link {
+	font-weight: 600;
+	font-size : 2em;
+	font-family:  Amatic SC, courier;
+	float: right;
+	padding: 7px;
+	background-color: black;
+	color: white;
+	border: 2px solid teal;
+	border-radius: 5px;
+}
+
+.new-product-link a:hover {
+	text-decoration: none;
+}
+
+
+.form-mover {
+display: block;
+margin-left: 40%;
+	
+}
+
+
+.new_header {
+	color: teal;
+	font-size: 4em;
+}

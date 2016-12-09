@@ -1,19 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p class="show_page-words">
   <strong>Name:</strong>
+  <p class="description">
   <%= @product.name %>
+  	
+  </p>
 </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
 
-<p>
+<p class="show_page-words">
   <strong>Image url:</strong>
-  <%= @product.image_url %>
+ 
+</p>
+<div class="show_background">
+<p>Picture in Here:<br>
+ <%= @product.image_url %>
+</p>
+</div>
+
+<p class="show_page-words">
+  <strong>Description:</strong><br>
+  <p class="description">
+  <%= @product.description %>
+  	
+  </p>
 </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
+<div class="showpage_links">
+<%= link_to 'Edit', edit_product_path(@product) %> 
 <%= link_to 'Back', products_path %>
+</div>

@@ -1,6 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1 id="product_header">Products</h1>
+<div class="new-product-link">
+<%= link_to 'Add a New Product', new_product_path %>
+</div>
 
 <table>
   <thead>
@@ -25,8 +28,8 @@
     <% end %>
   </tbody>
 </table>
-
+<div class="new-product-link">
+<%= link_to 'Add a New Product', new_product_path %>
+</div>
 <br>
-
-<%= link_to 'New Product', new_product_path %>
 
