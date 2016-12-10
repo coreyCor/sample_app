@@ -1,6 +1,9 @@
-<h1>Editing Product</h1>
-
+<h1 id="product-header">Edit Product</h1>
+<div class="form-mover">
 <%= render 'form', product: @product %>
+</div>
 
-<%= link_to 'Show', @product %> |
+<div class="editpage-links">
+<%= link_to 'Show', @product %> 
 <%= link_to 'Back', products_path %>
+</div>

@@ -6,20 +6,20 @@
 
 
 
- #product_header {
+ #product-header {
  font-size: 5em;
  color: teal;
  }
 
 
-.th_on_productspage {
+.th-on-productspage {
 	padding: 10px;
 	font-family: courier;
 	color: teal;
 	font-size: 1.5em;
 }
 
-.show_background {
+.show-background {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -32,7 +32,7 @@
 	box-shadow: 1px 1px 5px 0 black;
 }
 
-.showpage_links  {
+.showpage-links  {
 font-size: 2em;
 font-family: Amatic Sc;
 font-weight: 600;
@@ -40,7 +40,7 @@ text-align: center;
 
 }
 
-.show_page-words {
+.show-page-words {
 	
 	color: black;
 	font-family: Amatic SC, courier;
@@ -49,7 +49,7 @@ text-align: center;
 }
 
 
-.showpage_links a {
+.showpage-links a {
 	background-color: white;
 	padding: 7px;
 	border-radius: 50%;
@@ -61,7 +61,7 @@ text-align: center;
 
 }
 
-.showpage_links a:hover {
+.showpage-links a:hover {
 	text-decoration: none;
 }
 
@@ -69,8 +69,9 @@ td a {
 	background-color: white;
 	padding: 7px;
 	border-radius: 5px;
-	border: 2px solid black;
+	border: 2px solid #000;
 	margin-bottom: 2%;
+	box-shadow: 3px 3px 2px grey;
 
 	}
 
@@ -90,10 +91,11 @@ table  tr {
 	font-family:  Amatic SC, courier;
 	float: right;
 	padding: 7px;
-	background-color: black;
+	background-color: white;
 	color: white;
-	border: 2px solid teal;
+	border: 2px solid #000;
 	border-radius: 5px;
+	box-shadow: 3px 3px 2px grey;
 }
 
 .new-product-link a:hover {
@@ -108,7 +110,41 @@ margin-left: 40%;
 }
 
 
-.new_header {
+.new-header {
 	color: teal;
 	font-size: 4em;
+}
+
+
+.newpage-back-button {
+
+}
+
+.newpage-back-button a:hover {
+	text-decoration: none;
+}
+
+
+
+
+
+.editpage-links {
+margin: 7%;
+font-size: 2em;
+font-family: Amatic Sc;
+font-weight: 600;
+text-align: center;
+}
+
+
+
+.editpage-links a {
+    background-color: white;
+	padding: 7px;
+	border-radius: 50%;
+	border: 3px solid teal;
+}
+
+.editpage-links a:hover {
+	text-decoration: none;
 }

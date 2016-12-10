@@ -30,19 +30,19 @@ body {
 }
 
 
- .nav_li a:hover {
+ .nav-li a:hover {
 	color: red;
 	text-decoration: none;
 }
 
 
-.nav_li a {
+.nav-li a {
 	text-decoration: none;
 	color: white;
 }
 
 
- .nav_li {
+ .nav-li {
 	display: inline-block;
 	padding: 15px 10px;
 	font-family: Amatic SC, courier;
@@ -56,7 +56,7 @@ body {
 }
 
 
- p.contact_info {
+ p.contact-info {
  	font-family: courier, georgian, Helvetica;
  	margin-top: 3%;
  	
@@ -72,7 +72,7 @@ body {
 
 
 
-.central_img {
+.central-img {
 	display: block;
 	height: 40%;
 	width: 40%;
@@ -129,7 +129,7 @@ p {
 
 
 
-#about_par {
+#about-par {
 	font-family: courier, georgian , Helvetica;
 	color: #000000;
 	margin-bottom: 5%;
@@ -145,14 +145,14 @@ p {
 }*/
 
 
-.footer_starts {
+.footer-starts {
 	border: 4px double white;
 	width: 100%;
 	margin-top: 10%;
 }
 
 
-.foot_comp {
+.foot-comp {
 	font-size: .80em;
 	color: #000000;
 	font-family: courier, sans serif, seriif, georgian ;
@@ -172,5 +172,11 @@ footer {
 @media (max-width: 767px) {
 	.img-responsive {
 		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		margin-top: 10%;
 	}
 }
