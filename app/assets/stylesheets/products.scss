@@ -14,9 +14,12 @@
 
 .th-on-productspage {
 	padding: 10px;
-	font-family: courier;
 	color: teal;
-	font-size: 1.5em;
+	font-size: 2.5em;
+	font-family: Amatic SC, courier;
+	text-shadow: 1px 1px #000;
+	padding-bottom: 10%;
+
 }
 
 .show-background {
@@ -80,9 +83,6 @@ td a:hover{
 	}
 
 
-table  tr {
-	margin-top: 2%;
-	}
 
 
 .new-product-link {
@@ -147,4 +147,10 @@ text-align: center;
 
 .editpage-links a:hover {
 	text-decoration: none;
+}
+
+ #buton-submit {
+	padding: 5px;
+    color: red;
+
 }
