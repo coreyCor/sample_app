@@ -8,6 +8,14 @@
   </p>
 </p>
 
+<p class="show-page-words">
+  <strong>Colour:</strong><br>
+  <p class="description">
+  <%= @product.colour %>
+    
+  </p>
+</p>
+
 
 <p class="show-page-words">
   <strong>Image url:</strong>
@@ -26,6 +34,16 @@
   	
   </p>
 </p>
+
+<p class="show-page-words">
+  <strong>PRICE</strong><br>
+  <p class="description">
+  <%= @product.price %>
+    
+  </p>
+</p>
+
+
 
 <div class="showpage-links">
 <%= link_to 'Edit', edit_product_path(@product) %> 
