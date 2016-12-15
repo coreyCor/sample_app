@@ -41,6 +41,7 @@ font-family: Amatic Sc;
 font-weight: 600;
 text-align: center;
 
+
 }
 
 .show-page-words {
@@ -57,6 +58,7 @@ text-align: center;
 	padding: 7px;
 	border-radius: 50%;
 	border: 3px solid teal;
+
 }
 
 .description {
@@ -66,6 +68,7 @@ text-align: center;
 
 .showpage-links a:hover {
 	text-decoration: none;
+
 }
 
 td a {
@@ -91,11 +94,13 @@ td a:hover{
 	font-family:  Amatic SC, courier;
 
 	padding: 7px;
-	background-color: white;
+	background-color: yellow;
 	color: white;
 	border: 2px solid #000;
 	border-radius: 5px;
 	box-shadow: 3px 3px 2px grey;
+	width: 12%;
+	float: right;
 }
 
 .new-product-link a:hover {
@@ -159,8 +164,56 @@ text-align: center;
 	padding-left: 0px;
 }
 
-.img-responsive {
-	width: 200px;
-	height: 200px;
-	margin-left:25%;
+
+
+.thumbnail {
+	margin-top 2%;
+	border-radius:0px;
+	box-shadow: 0 0 10px 0 black;
+	
+	
+
 }
+
+.thumbnail-img {
+	max-height: 150px;
+    border: 1px solid black;
+	box-shadow: 0 0 10px 0 black;
+}
+
+.product-name {
+	text-align: center;
+}
+
+.new-prod-link {
+	float: right;
+}
+
+
+
+.description-par {
+	font-size: .8em;
+	color: black;
+}
+
+.product-price {
+	text-align: center;
+	padding-top: 5%;
+}
+
+
+.jumbotron {
+	margin-top: 7%;
+	background-color: teal;
+	box-shadow: 0 0 10px 0 black;
+	border: 1px solid #000;
+	
+}
+
+.j-t-par {
+	padding: 15%;
+}
+
+a:visited {
+	text-decoration: none;
+};

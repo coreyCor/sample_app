@@ -1,18 +1,32 @@
-<div class="container-fluid">
-  <div class="row">
-    <% @products.each do |product| %>
-      <div class="col-sm-12 col-md-3">
-      <%= image_tag(product.image_url, class: "img-responsive") %>
-        <h1><%= product.name %></h1>
-        <p><%= product.description %></p>
-        <p class="price-centered"><%= product.price %><br>
-            <%= link_to 'Show', product %>
-            <%= link_to 'Edit', edit_product_path(product) %>
-        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-      </div><!-- /col -->
-    <% end %>
-            
-  <%= link_to 'Add a New Product', new_product_path %>
-            
-  
+<div class"container-fluid">
+<div class="jumbotron">
+  <div class="container">
+    <p class="j-t-par"> Honest Abe's Bikes</p>
+  </div>
 </div>
+<hr>
+</div>
+<div class="row">
+  <% @products.each do |product| %>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+        <h3 class="product-name"><%= product.name %></h3>
+      <%= image_tag(product.image_url, class: "img-responsive thumbnail-img") %>
+      <div class= "product-price">
+      <%= product.price %>
+      </div>
+      <div class="caption">
+        <p class="description-par"><%= product.description %><br>
+      <div class="showpage-links">
+       <%= link_to 'View', product %>
+       <%= link_to 'Edit', edit_product_path(product) %>
+       <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
+      </div>
+
+    </div>
+  </div>
+ <% end %>
+</div>
+
+<div class="new-product-link"><%= link_to 'Add a New Product', new_product_path %></div>
