@@ -36,9 +36,9 @@
 }
 
 .showpage-links  {
-font-size: 2em;
-font-family: Amatic Sc;
-font-weight: 600;
+font-size: 1.25em;
+font-family: Roboto, sans-serif;
+font-weight: 200;
 text-align: center;
 
 
@@ -47,7 +47,7 @@ text-align: center;
 .show-page-words {
 	
 	color: black;
-	font-family: Amatic SC, courier;
+	font-family: Roboto, courier;
 	font-size: 2em;
 	font-weight : 600;
 }
@@ -56,8 +56,8 @@ text-align: center;
 .showpage-links a {
 	background-color: white;
 	padding: 7px;
-	border-radius: 50%;
-	border: 3px solid teal;
+	border-radius: 2px;
+	border: 1px solid teal;
 
 }
 
@@ -68,34 +68,18 @@ text-align: center;
 
 }
 
-td a {
-	background-color: white;
-	padding: 7px;
-	border-radius: 5px;
-	border: 2px solid #000;
-	margin-bottom: 2%;
-	box-shadow: 3px 3px 2px grey;
-
-	}
-
-td a:hover{
-	text-decoration: none;
-	}
-
-
-
 
 .new-product-link {
-	font-weight: 600;
-	font-size : 2em;
-	font-family:  Amatic SC, courier;
+	
+	font-size : 1.25em;
+	font-family: Roboto, sans-serif;
 
 	padding: 7px;
-	background-color: yellow;
+	background-color: teal;
 	color: white;
-	border: 2px solid #000;
-	border-radius: 5px;
-	box-shadow: 3px 3px 2px grey;
+	
+	border-radius: 3px;
+	box-shadow: 2px 2px 1px #ccc;
 	width: 12%;
 	float: right;
 }
@@ -151,7 +135,8 @@ text-align: center;
 
  #buton-submit {
 	padding: 5px;
-    color: red;
+	color: black;
+    
 
 }
 
@@ -175,17 +160,22 @@ text-align: center;
 
 .product-name {
 	text-align: center;
+	font-family: Roboto, courier;
 }
 
-.new-prod-link {
+.new-product-link {
 	float: right;
-}
+	width: 10%;
+	text-align: center;
+	border: 1px solid black;
+	}
 
 
 
 .description-par {
 	font-size: .8em;
 	color: black;
+	font-family: Roboto,
 }
 
 .product-price {
@@ -195,8 +185,8 @@ text-align: center;
 
 
 .jumbotron {
-	margin-top: 7%;
-	background-color: teal;
+	margin-top: 3%;
+	background-color: #ccc;
 	box-shadow: 0 0 10px 0 black;
 	border: 1px solid #000;
 	
@@ -204,8 +194,33 @@ text-align: center;
 
 .j-t-par {
 	padding: 15%;
+	font-family: Roboto, courier;
+	color: black;
+
+	
+
 }
 
 a:visited {
 	text-decoration: none;
+}
+
+@media (max-width: 767px){
+	.jumbotron {
+		margin-top: 40%;
+	}
+}
+
+@media (max-width: 767px){
+	.new-product-link {
+		width: 100%;
+	}
+}
+
+
+.showpage-links a:hover {
+	background-color: teal;
+	color: white;
+	border: 1px solid black;
+
 }

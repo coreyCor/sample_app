@@ -9,6 +9,7 @@
 <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
    <%= action_cable_meta_tag %>
@@ -20,7 +21,7 @@
     <li class="nav-li"=""><a href="https://bikeberlin123.herokuapp.com/static_pages/contact">Contact</a></li>
     <li class="nav-li"><a href="https://bikeberlin123.herokuapp.com/products">Products</a></li>
   </nav>
-<div class="body-color">
+<div class="container-fluid" id="body-color">
  <%= yield %>
   <hr class="footer-starts">
   <footer><p class="foot-comp">CoreyDesigns&copy2016</p>
@@ -28,4 +29,3 @@
 </div>
 </body>
 </html>
-
