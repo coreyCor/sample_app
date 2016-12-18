@@ -10,8 +10,15 @@ Rails.application.routes.draw do
   
   root 'static_pages#landing_page'
   
+  get 'orders/index'
+
+  get 'orders/new'
+
+  get 'orders/show'
 
   resources :orders, only: [:index, :show, :create, :destroy]
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
