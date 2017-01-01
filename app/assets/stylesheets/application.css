@@ -21,7 +21,7 @@ body {
 
 
 .navbar-inverse {
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0, 0, 0, 0.69);
 	box-shadow: 0 0 8px 0 black;
 	border-radius: 1px;
 	z-index: 1;
@@ -31,14 +31,18 @@ body {
 
 
  .nav-li a:hover {
-	color: red;
+	color: #800000;
 	text-decoration: none;
+	font-weight: 900;
+	transition: all .3s ease-in-out;
+	  
 }
 
 
 .nav-li a {
 	text-decoration: none;
 	color: white;
+	font-weight: 500;
 }
 
 

@@ -3,7 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
  
  
+#top-index {
+padding-top: 5%;
+}
 
+@media (max-width: 767px){
+#top-index {
+	padding-top: 10%;
+  }
+}
 
 
  #product-header {
@@ -48,6 +56,7 @@ text-align: center;
 	padding: 7px;
 	border-radius: 2px;
 	border: 1px solid teal;
+	transition: all .3s ease-in-out;
 
 }
 
@@ -63,19 +72,19 @@ text-align: center;
 	
 	font-size : 1.25em;
 	font-family: Roboto, sans-serif;
-
 	padding: 7px;
 	background-color: teal;
 	color: white;
-	
 	border-radius: 3px;
 	box-shadow: 2px 2px 1px #ccc;
 	width: 12%;
 	float: right;
+	margin: 2%;
 }
 
 .new-product-link a:hover {
 	text-decoration: none;
+
 }
 
 
@@ -174,23 +183,6 @@ text-align: center;
 }
 
 
-.jumbotron {
-	margin-top: 3%;
-	background-color: #ccc;
-	box-shadow: 0 0 10px 0 black;
-	border: 1px solid #000;
-	
-}
-
-.j-t-par {
-	padding: 15%;
-	font-family: Roboto, courier;
-	color: black;
-
-	
-
-}
-
 a:visited {
 	text-decoration: none;
 }
@@ -201,7 +193,7 @@ a:visited {
 	}
 }
 
-@media (max-width: 767px){
+@media (max-width: 900px){
 	.new-product-link {
 		width: 100%;
 	}
@@ -212,5 +204,10 @@ a:visited {
 	background-color: teal;
 	color: white;
 	border: 1px solid black;
+	transition: all .3s ease-in-out
 
+}
+
+.space {
+	padding: 5%;
 }

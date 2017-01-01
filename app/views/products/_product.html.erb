@@ -1,0 +1,21 @@
+  <div class="col-sm-6 col-md-3">
+  <hr class="space">
+    <div class="thumbnail">
+        <h3 class="product-name"><%= product.name %></h3>
+      <%= image_tag(product.image_url, class: "img-responsive thumbnail-img") %>
+      <div class= "product-price">
+      <%= product.price %> $
+      </div>
+      <div class="caption">
+        <p class="description-par"><%= product.description %><br>
+      <div class="showpage-links">
+       <%= link_to 'View', product %>
+       <%= link_to 'Edit', edit_product_path(product) %>
+       <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+

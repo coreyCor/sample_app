@@ -2,3 +2,38 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+
+  
+img {
+      margin-left: auto;
+      position: relative;
+      margin-right: auto;
+      padding: 2.5%;
+}
+
+
+      
+	.carousel-caption {
+	color: white;
+	font-weight: 700;
+	padding: 2.5px;
+	font-size: 1.5em;
+	font-family: courier;
+	text-align: center;
+	background-color: black;
+	opacity: 0.6;
+	border-radius: 5px;
+}
+	
+.carousel-indicators {
+	
+	padding: 10px;
+}
+
+@media (max-width: 767px){
+  .carousel-caption {
+  display: none;
+   }
+  }

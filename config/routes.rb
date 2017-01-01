@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get 'orders/new'
 
   get 'orders/show'
-
+  
   resources :orders, only: [:index, :show, :create, :destroy]
 
 

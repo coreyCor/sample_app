@@ -21,11 +21,10 @@
 
  
 </p>
-<div class="show-background">
-<p>Picture in Here:<br>
- <%= @product.image_url %>
+<p><br>
+<%= image_tag(@product.image_url)%>
 </p>
-</div>
+
 
 <p class="show-page-words">
   <strong>Description:</strong><br>
@@ -39,14 +38,6 @@
   <strong>PRICE</strong><br>
   <p class="description">
   <%= @product.price %>
-    
-  </p>
-</p>
-
-<p class="show-page-words">
-  <strong>Colour</strong><br>
-  <p class="description">
-  <%= @product.colour %>
     
   </p>
 </p>
