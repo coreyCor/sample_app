@@ -2,19 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
+.featured-headline {
+	padding: 2%;
+}
 
   
 img {
       margin-left: auto;
       position: relative;
       margin-right: auto;
-      padding: 2.5%;
+     
 }
 
 
-      
+  
 	.carousel-caption {
 	color: white;
 	font-weight: 700;
@@ -27,9 +28,10 @@ img {
 	border-radius: 5px;
 }
 	
-.carousel-indicators {
+.carousel-indicators li {
 	
-	padding: 10px;
+	padding: 5px;
+	border: 1px solid red;
 }
 
 @media (max-width: 767px){
@@ -37,3 +39,21 @@ img {
   display: none;
    }
   }
+
+@media (max-width: 767px) {
+	.featured-headline {
+	padding: 5%;
+	}
+}
+
+
+
+.carousel-indicators .active {
+ background-color: black;	
+ border: 1px solid purple;
+}
+ 
+
+.carousel {
+	width: 100%;
+}
