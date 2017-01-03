@@ -42,12 +42,37 @@ text-align: center;
 
 }
 
+#show-img {
+	height: 200px;
+	width: 200px;
+	border: 3px solid teal;
+	border-radius: 20px 0px;
+	box-shadow: 2px 2px 10px 0 grey;
+}
+
+
+.show-page-img-holder {
+text-align: center;
+
+}
+
+
 .show-page-words {
 	
 	color: black;
 	font-family: Roboto, courier;
 	font-size: 2em;
 	font-weight : 600;
+}
+
+
+.show-page-words1 {
+	
+	color: black;
+	font-family: Roboto, courier;
+	font-size: 2em;
+	font-weight : 600;
+	margin-top: 5%;
 }
 
 
@@ -75,10 +100,11 @@ text-align: center;
 	padding: 7px;
 	background-color: teal;
 	color: white;
-	border-radius: 3px;
-	box-shadow: 2px 2px 1px #ccc;
+	border-radius: 0px;
+	box-shadow: 2px 2px 15px grey;
 	width: 12%;
 	float: right;
+	clear: left;
 	margin: 2%;
 }
 

@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p class="show-page-words">
+<p class="show-page-words1">
   <strong>Name:</strong>
   <p class="description">
   <%= @product.name %>
@@ -21,9 +21,9 @@
 
  
 </p>
-<p><br>
-<%= image_tag(@product.image_url)%>
-</p>
+<div class="show-page-img-holder"><br>
+<%= image_tag(@product.image_url, class: "img-responsive", id: "show-img")%>
+</div>
 
 
 <p class="show-page-words">
