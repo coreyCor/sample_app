@@ -7,12 +7,12 @@
       <%= product.price %> $
       </div>
       <div class="caption">
-        <p class="description-par"><%= product.description %><br>
+        <p class="description-par"><%= product.description %><br></p>
       <div class="showpage-links">
        <%= link_to 'View', product %>
        <%= link_to 'Edit', edit_product_path(product) %>
        <%= link_to 'Delete', product, method: :delete,
-        data: { confirm: 'Are you sure?' } %></p>
+        data: { confirm: 'Are you sure?' } %>
       </div>
       </div>
 
