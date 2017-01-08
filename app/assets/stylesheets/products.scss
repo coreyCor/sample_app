@@ -237,3 +237,11 @@ a:visited {
 .space {
 	padding: 5%;
 }
+
+
+@media (max-width: 767px) {
+	#show-img {
+		height: 100%;
+		width: 100%;
+	}
+}
