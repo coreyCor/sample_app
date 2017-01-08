@@ -73,3 +73,9 @@ img {
 	border-radius: 5px;
 	
 }
+
+@media (max-width: 767px) {
+	.carousel-indicators li {
+		display: none;
+	}
+}
