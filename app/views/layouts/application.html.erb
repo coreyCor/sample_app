@@ -16,17 +16,25 @@
   <%= action_cable_meta_tag %>
  </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <li class="nav-li"><a href="https://bikeberlin123.herokuapp.com/">Home</a></li>
-    <li class="nav-li"><a href="https://bikeberlin123.herokuapp.com/static_pages/about">About Us</a></li>
-    <li class="nav-li"=""><a href="https://bikeberlin123.herokuapp.com/static_pages/contact">Contact</a></li>
-    <li class="nav-li"><a href="https://bikeberlin123.herokuapp.com/products">Products</a></li>
-  </nav>
+ <div id = "side-nav" class="sideNavBar">
+ <a href="javascript:void(0)" class="close-button"
+ onclick="closeNav()">&times</a>
+ <a href="https://bikeberlin123.herokuapp.com/">Home</a>
+ <hr class="nav-hr">
+ <a href="https://bikeberlin123.herokuapp.com/static_pages/about">About</a>
+ <hr class="nav-hr">
+ <a href="https://bikeberlin123.herokuapp.com/static_pages/contact">Contact</a>
+ <hr class="nav-hr">
+ <a href="https://bikeberlin123.herokuapp.com/products">Products</a>
 
+</div><!-- end of side-nav-->
+<span class= "glyphicon glyphicon-menu-hamburger openButtton" onclick="openNav()"></span>
+<hr class="cont-starts">
  <%= yield %>
+ </div>
   <hr class="footer-starts">
   <footer><p class="foot-comp">CoreyDesigns&copy2016</p>
   </footer>
-
+</div>
 </body>
 </html>

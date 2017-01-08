@@ -16,7 +16,7 @@ padding-top: 5%;
 
  #product-header {
  font-size: 5em;
- color: teal;
+ color: #000;
  }
 
 
@@ -43,9 +43,9 @@ text-align: center;
 }
 
 #show-img {
-	height: 50%;
-	width: 50%;
-	border: 3px solid teal;
+	height: 25%;
+	width: 25%;
+	border: 2px solid #000;
 	border-radius: 20px 0px;
 	box-shadow: 2px 2px 10px 0 grey;
 }
@@ -80,7 +80,7 @@ text-align: center;
 	background-color: white;
 	padding: 7px;
 	border-radius: 2px;
-	border: 1px solid teal;
+	border: 1px solid #303030;
 	transition: all .3s ease-in-out;
 	margin-top: 5px;
 }
@@ -98,15 +98,15 @@ text-align: center;
 	font-size : 1.25em;
 	font-family: Roboto, sans-serif;
 	padding: 7px;
-	background-color: teal;
-	color: white;
+	background-color: #afb42b;
 	border-radius: 0px;
-	box-shadow: 2px 2px 15px grey;
+	box-shadow: 0 0  10px 0 grey;
 	width: 12%;
 	float: right;
 	clear: left;
 	margin: 2%;
 }
+
 
 .new-product-link a:hover {
 	text-decoration: none;
@@ -162,18 +162,17 @@ text-align: center;
 	padding: 5px;
 	color: black;
     
-
-}
-
-
-
+ 	
+ }
+ 
 
 .thumbnail {
-
+	margin-top: 20%;
+	max-height: 10%;
 	border-radius: 0px;
 	box-shadow: 0 0 15px 0 black;
-	padding: 10%;
-	
+	border: 1px solid black;
+
 
 }
 
@@ -181,6 +180,7 @@ text-align: center;
 	max-height: 150px;
     border: 1px solid black;
 	box-shadow: 0 0 10px 0 black;
+	padding: 15px;
 }
 
 .product-name {
@@ -227,7 +227,7 @@ a:visited {
 
 
 .showpage-links a:hover {
-	background-color: teal;
+	background-color: #afb42b;
 	color: white;
 	border: 1px solid black;
 	transition: all .3s ease-in-out

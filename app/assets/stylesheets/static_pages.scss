@@ -3,7 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .featured-headline {
-	padding: 2%;
+
+	font-family: serif;
+	color: #303030;
 }
 
   
@@ -11,9 +13,17 @@ img {
       margin-left: auto;
       position: relative;
       margin-right: auto;
+      border: 2px solid red;
      
 }
 
+
+.green-hr {
+	width: 80%;
+	color: #303030;
+	border: .25px solid #999;
+	margin-bottom: 5%;
+}
 
   
 	.carousel-caption {
@@ -31,7 +41,7 @@ img {
 .carousel-indicators li {
 	
 	padding: 5px;
-	border: 1px solid red;
+	border: 1px solid #afb42b;
 }
 
 @media (max-width: 767px){
@@ -49,11 +59,17 @@ img {
 
 
 .carousel-indicators .active {
- background-color: black;	
- border: 1px solid purple;
+ background-color: #afb42b;	
+ border: 1px solid #000;
+}
+
+.img-item {
+	padding-top: 5%;
 }
  
-
-.carousel {
-	width: 100%;
+#pics {
+	box-shadow: 0 0 15px 0 black;
+	border: 2px solid black;
+	border-radius: 5px;
+	
 }
