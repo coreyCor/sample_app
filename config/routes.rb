@@ -5,11 +5,13 @@ Rails.application.routes.draw do
   get 'static_pages/about'
 
   get 'static_pages/contact'
-
-  get 'static_pages/index'
+#may not be needed
+ 
   
-get 'static_pages/landing_page'
+  get 'static_pages/landing_page'
+  
   root 'static_pages#index'
+  
   get 'orders/index'
 
   get 'orders/new'
