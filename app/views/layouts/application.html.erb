@@ -19,18 +19,20 @@
  <div id = "side-nav" class="sideNavBar">
  <a href="javascript:void(0)" class="close-button"
  onclick="closeNav()">&times</a>
- <a href="https://bikeberlin123.herokuapp.com/">Home</a>
+ <%= link_to 'Home', static_pages_landing_page_path %>
  <hr class="nav-hr">
- <a href="https://bikeberlin123.herokuapp.com/static_pages/about">About</a>
+<%= link_to 'About', static_pages_about_path %>
  <hr class="nav-hr">
- <a href="https://bikeberlin123.herokuapp.com/static_pages/contact">Contact</a>
+<%= link_to 'Contact', static_pages_contact_path %>
  <hr class="nav-hr">
- <a href="https://bikeberlin123.herokuapp.com/products">Products</a>
+ <%= link_to 'Products', products_path %>
 
 </div><!-- end of side-nav-->
-<span class= "glyphicon glyphicon-menu-hamburger openButtton" onclick="openNav()"></span>
+<a class="cm"><span class= "glyphicon glyphicon-menu-hamburger openButtton" onclick="openNav()"></span></a>
 <hr class="cont-starts">
  <%= yield %>
+ 
+<%= button_to 'Back', :back, :class => "btn btn-default", :id => 'back-button' %>
  </div>
   <hr class="footer-starts">
   <footer><p class="foot-comp">CoreyDesigns&copy2016</p>

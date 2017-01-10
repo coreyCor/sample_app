@@ -210,3 +210,9 @@ footer {
 	}
 }
 
+#back-button {
+	margin-top: 5%;
+	background-color: #afb42b;
+	border: 1px solid black;
+	border-radius: 3px;
+}

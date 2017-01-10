@@ -79,3 +79,30 @@ img {
 		display: none;
 	}
 }
+
+#index-page-img {
+	height: 30%;
+	width: 30%;
+}
+
+.stat-page-index-link {
+	background-color: #ccc;
+	text-align: center;
+	width: 10%;
+	font-size: 1em;
+	border: 1px solid #000;
+	box-shadow: 0 0 10px 0 black;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+
+}
+
+
+	.about-us {
+		font-size: 3em;
+		font-family: courier, serif, georgian ;
+		color: black;
+		font-weight: 600;
+	}

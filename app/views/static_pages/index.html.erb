@@ -4,4 +4,8 @@
 
 <h1>Welcome to Bike Berlin</h1>
 <h2>Your source for used bikes in Berlin</h2>
-<%= image_tag("bike1.jpg", class: "img-responsive central-img") %>
+<%= image_tag("bike1.jpg", class: "img-responsive", id: "index-page-img") %>
+
+<div class="stat-page-index-link">
+    <%= link_to 'Products', products_path %>
+</div>
