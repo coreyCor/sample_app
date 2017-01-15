@@ -1,5 +1,5 @@
 
-<h2 class="featured-headline">Today's Featured Products</h2>
+<p class="featured-headline">Featured Products</p>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -12,7 +12,7 @@
    <div class="carousel-inner" role="listbox">
   <% @products.each do |product| %>
     <div class="item img-item<%= " active" if product == @products.first %>">
-      <%= image_tag(product.image_url) %>
+      <%= image_tag(product.image_url, class:"car-img") %>
       <div class="carousel-caption">
         <%= product.name %>
         </div>

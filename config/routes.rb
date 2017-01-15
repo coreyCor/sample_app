@@ -2,15 +2,16 @@ Rails.application.routes.draw do
   
 
   resources :products
+  
   get 'static_pages/about'
 
   get 'static_pages/contact'
-#may not be needed
  
+  get 'static_pages/index'
   
   get 'static_pages/landing_page'
   
-  root 'static_pages#index'
+  root 'static_pages#landing_page'
   
   get 'orders/index'
 

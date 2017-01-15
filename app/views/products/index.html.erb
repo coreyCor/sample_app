@@ -1,13 +1,15 @@
 
+  <%= image_tag("product-page-header.jpg", class: "img-responsive", id: "product-header-photo") %>
+    <div class="container">
+         <p class="product-page-header">Our Bikes</p><br>
+         <div class="row">
+            <% @products.each do |product| %>
+            <%= render partial: "product", locals: {product: product} %>
+    <% end %>
 
+ <button class="btn btn-info" id="new-product-button"><%= link_to 'New Product', new_product_path %>
+ 
+         </div>
+     </div><!--cont-->
 
-<div class="container">
- <% @products.each do |product| %>
-    <%= render partial: "product", locals: {product: product} %>
-
- <% end %>
-
- <div class="new-product-link"><%= link_to 'New Product', new_product_path %>
- </div>
- </div>
  	

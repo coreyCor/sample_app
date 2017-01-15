@@ -1,6 +1,8 @@
-<%= form_for(product) do |f| %>
-  <% if product.errors.any? %>
-    <div id="error_explanation">
+
+
+  <%= form_for(product) do |f| %>
+    <% if product.errors.any? %>
+      <div id="error_explanation">
       <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
 
       <ul>
@@ -11,31 +13,26 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+  <div class="form-field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
   </div>
-
-  <div class="field">
+  <div class="form-field">
     <%= f.label :description %>
     <%= f.text_area :description %>
   </div>
-
-  <div class="field">
+  <div class="form-field">
     <%= f.label :image_url %>
     <%= f.text_field :image_url %>
   </div>
-
-  <div class="field">
+  <div class="form-field">
   <%= f.label :colour %><br>
   <%= f.text_field :colour %>
-</div>
-
- <div class="field">
+  </div>
+  <div class="form-field">
     <%= f.label :price %>
     <%= f.text_field :price %>
   </div>
-
   <div class="actions" id="buton-submit">
     <%= f.submit %>
   </div>

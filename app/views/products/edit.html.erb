@@ -1,10 +1,10 @@
 
-<h1 id="product-header">Edit Product</h1>
-<div class="form-mover">
-<%= render 'form', product: @product %>
-</div>
+  <p class="edit-form-header">Edit Product</p>
+        <div class="form-mover">
+    <%= render 'form', product: @product %>
+        </div>
 
-<div class="showpage-links">
-<%= link_to 'Show', @product %> 
-<%= link_to 'Back', products_path %>
-</div>
+  <div class="edit-form-links">
+        <%= link_to 'View |', @product %>
+        <%= link_to '| Back', products_path %>
+    </div>
