@@ -10,7 +10,7 @@
 
 	.product-box {
 		
-		margin:1%;
+		margin: 1%;
 		margin-top: 15%;
 		border-bottom: 2px solid black;
 		background-color: red;
@@ -73,6 +73,7 @@
 	
 	.product-tile-links {
 		text-align: center;
+	    margin-bottom: 15%;
 	}
 	
 	
