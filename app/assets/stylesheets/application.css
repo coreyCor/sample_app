@@ -167,5 +167,55 @@ ul li.menu-links:hover {
 	
 }
 
+.btn-danger {
+	margin-left: 5%;
+	margin-top: 5%;		
+	border: 1px solid black;
+	box-shadow: 0 0 10px 0 grey;
+	background-color: red;		
+	font-family: Contrail One, Georgian, Serif, Sans Serif;
+	color: #000;
+}
 
 
+.btn-danger:hover {
+	background-color: red;
+	color: black;
+	box-shadow: 0 0 5px 0 grey ; 
+	border: 0.5px solid black;
+}
+
+.btn-danger:active {
+	background-color: red;
+	color: black;
+}
+
+
+#q {
+	border-radius: 10px;
+	border: 2px solid #46b8da;
+ }
+ form label {
+    font-size: 2em;
+    font-family: Contrail One, Georgian, sans-serif;
+	
+ }
+
+.bb {
+	float:right;
+}
+
+.btn-info {
+	border: 1px solid black;
+	box-shadow: 0 0 7px 0 #ccc;
+	color: black;
+	font-family: Contrail One, Serif, Georgian, Helvetica;
+	
+}
+
+@media (max-width: 767px) {
+	form label {
+		font-size: 1em;
+		
+	}
+}

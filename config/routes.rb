@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   
   get 'static_pages/landing_page'
   
-  root 'products#index'
+  root 'static_pages#landing_page'
   
   get 'orders/index'
 

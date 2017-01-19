@@ -10,6 +10,12 @@
  <button class="btn btn-info" id="new-product-button"><%= link_to 'New Product', new_product_path %>
  
          </div>
+        <%= form_tag("/products", method: "get", class: "bb" ) do %>
+            <%= label_tag(:q, "Search Bikes:") %>
+            <%= text_field_tag (:q) %><br>
+            <br >
+            <%= submit_tag("Search", class: "btn btn-info")%>
+            <% end %>
      </div><!--cont-->
 
  	

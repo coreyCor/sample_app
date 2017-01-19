@@ -3,7 +3,7 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Hello this is an app about *** developed by Corey Cutlip in 2016
+Hello this is an app for finding/ bikes developed by Corey Cutlip in 2016
 
 
 
