@@ -219,3 +219,12 @@ ul li.menu-links:hover {
 		
 	}
 }
+
+#logo-menu {
+	font-family: Contrail One, sans-serif, Courier;
+	font-size: 1.8em;
+	padding-top: 20px;
+	text-align: center;
+	
+	
+}
