@@ -3,7 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
+    .well-lg {
+        margin-top: 5%;
+    }
+    
+    .thank-top {
+        text-align: center;
+        font-family: Contrail One, Georgian, sans serif;
+        font-size: 2.5em;
+        margin-top: 10%;
+    }
+    
+    
 
     .car-img {
         position: relative;
@@ -12,7 +23,13 @@
         padding: 5%;
     
     }
-
+    
+    
+  #wha {
+      position: relative;
+      margin-left: 10%;
+     margin-top: 10%;
+  }
 	.carousel-caption {
     	color: white;
 	    font-weight: 700;

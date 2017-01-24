@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
       if(Rails.env.development?)
         @products = Product.where("name LIKE ?", "%#{search_term}%")
       else
-        # use ilike for case insensitivity on postres
+        #postgres LIKE Version
         @products = Product.where("name ilike ?", "%#{search_term}%")
       end
     else
@@ -33,6 +33,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+    @products = Product.all  # method for the imgage of product
   end
 
   # POST /products

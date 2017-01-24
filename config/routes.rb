@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   
   root 'static_pages#landing_page'
   
+  post 'static_pages/thank_you'
+  
   get 'orders/index'
 
   get 'orders/new'
