@@ -1,7 +1,10 @@
 
   <p class="edit-form-header">Edit Product</p>
+  
         <div class="form-mover">
+   <%= image_tag(@product.image_url, class: "img-responsive", id: "show-img")%>         
     <%= render 'form', product: @product %>
+    
         </div>
 
   <div class="edit-form-links">
