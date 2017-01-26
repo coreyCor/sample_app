@@ -5,26 +5,38 @@ application up and running.
 
 Hello this is an app for finding/ bikes developed by Corey Cutlip in 2016
 
+Totally open to suggestions! 
 
 
-Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.2.4
 
-* System dependencies
+* Rails version 5.0.1
 
-* Configuration
+* sass-rails version 5.0
 
-* Database creation
+*coffe-rails version 4.2
 
-* Database initialization
+*Bootstrap version 3
 
-* How to run the test suite
+* devise gem
 
-* Services (job queues, cache servers, search engines, etc.)
+* sendgrid mail for production on heroku 
 
-* Deployment instructions
+* sqllite3 db for development 
 
+*pg db for production 
+
+*This is a school project (https://careerfoundry.com "Career Foundry") 
+
+* coreyCutlip2016-2017 and hopefully not 2018!
+
+* I am using a program called sidr for the side menu, It's
+*great
+
+* Note: I started this project on a windows environment but could not run or do a lot of things with the assest.
+ So now I work on an IDE called cloud9(https://c9.io) I set up a ruby environment and each workspace is it's own ubantu virtual machine It's Wonderful!!
+ 
 * ...
 
 
