@@ -1,6 +1,10 @@
-<h1>Editing User</h1>
 
+
+<p class="edit-form-header">Edit Your Profile</p>
+<div class="form-mover">
 <%= render 'form', user: @user %>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'Veiw User', @user, class: "btn btn-info" %> 
+<%= link_to 'Back', users_path, class: "btn btn-info" %>
+
+</div>

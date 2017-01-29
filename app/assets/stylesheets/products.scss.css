@@ -247,16 +247,14 @@
 		
 		
 		.form-control {
-			padding : 2%;
-			margin-top: 2%;
+		
+			margin-top: 1%;
 			margin-bottom: 2%;
 			width: 50%;
 		}
 		
 		
-		#top-but {
-			float: right;
-			background-color: "Black";
-			color: white;
-			width: 5%;
+		
+		.btn-danger {
+			border-radius: 0px;
 		}

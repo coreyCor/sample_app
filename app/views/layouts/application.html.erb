@@ -63,11 +63,23 @@ $(document).ready(function() {
  
 
 <%= yield %>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+<div class="container">
+  <% if alert %>
+    <p class="alert alert-danger">
+      <a href="#", class="close" data-dismis="alert" aria-label="close">x</a>
+       <%=alert%>
+  <% end %>
+    </p>
 
 
-  <div class="container">
+  <% if notice %>
+    <p class="alert alert-success">
+      <a href="#" class="close" data-dismis="alert" aria-label="close">x</a>
+      <%=notice %>
+  <% end %>
+    </p>
+
+
  <%=link_to 'back' , :back, class: "btn btn-danger", id: 'back-but' %>
  
   <hr class="footer-starts">
