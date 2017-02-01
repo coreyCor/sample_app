@@ -28,16 +28,8 @@
        MSRP: <%= @product.price %> <span class="glyphicon glyphicon-usd"></span>
       </p>
   </p>
-  <h3>Good Reviews:</h3>
-  <%= @product.highest_rating_comment.body %>
-  <br>
-  <%= @product.highest_rating_comment.user %> 
-  <br>
-  <h3>Bad Reviews:</h3>
-  <br>
-  <%= @product.lowest_rating_comment.body %>
-  <br>
-  <%= @product.lowest_rating_comment.user %>
+  <h3>Reviews:</h3>
+
    <div class="edit-form-links">
     <%= link_to 'Edit |', edit_product_path(@product) %> 
     <%= link_to '| Back', products_path %>
