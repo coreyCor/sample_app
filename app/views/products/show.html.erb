@@ -25,11 +25,20 @@
   <p class="show-page-words">
     <strong>PRICE:</strong><br>
       <p class="description">
-  MSRP: <%= @product.price %><span class="glyphicon glyphicon-usd"></span>
+       MSRP: <%= @product.price %> <span class="glyphicon glyphicon-usd"></span>
       </p>
   </p>
-   <br>
-  <div class="edit-form-links">
+  <h3>Good Reviews:</h3>
+  <%= @product.highest_rating_comment.body %>
+  <br>
+  <%= @product.highest_rating_comment.user %> 
+  <br>
+  <h3>Bad Reviews:</h3>
+  <br>
+  <%= @product.lowest_rating_comment.body %>
+  <br>
+  <%= @product.lowest_rating_comment.user %>
+   <div class="edit-form-links">
     <%= link_to 'Edit |', edit_product_path(@product) %> 
     <%= link_to '| Back', products_path %>
   </div>
