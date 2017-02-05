@@ -2,11 +2,12 @@
 <html>
 <head>
   <title>Bike | | Berlin</title>
+
   <script src="https://use.fontawesome.com/09a16eb045.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
@@ -42,24 +43,18 @@
             <%= text_field_tag (:q) %><br>
             <br >
             <%= submit_tag("Search", class: "btn btn-default")%>
+               <% if user_signed_in? %>
+    <%= link_to('Logout', destroy_user_session_path, :method => :delete, id: "login", class: "btn btn-danger") %>
+  <% else %>
+    <%= link_to('Login', new_user_session_path, class: "btn btn-danger", id: "login") %>
+  <% end %>
             <% end %>
             <ul class="nav pull-right">
-  <li>
-  <% if user_signed_in? %>
-    <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "btn btn-danger") %>
-  <% else %>
-    <%= link_to('Login', new_user_session_path, class: "btn btn-danger") %>
-  <% end %>
-  </li>
 </ul
   </ul>
 </div>
 
-<script>
-$(document).ready(function() {
-  $('#menu').sidr();
-});
-</script>
+
  
 
 <%= yield %>
@@ -81,10 +76,24 @@ $(document).ready(function() {
 
 
  <%=link_to 'back' , :back, class: "btn btn-danger", id: 'back-but' %>
+   <% if user_signed_in? %>
+    <%= link_to('Logout', destroy_user_session_path, :method => :delete, id: "login2") %>
+  <% else %>
+    <%= link_to('Login', new_user_session_path, id: "login2") %>
+  <% end %>
  
   <hr class="footer-starts">
   <footer><p class="foot-comp">coreyCutlipDesigns&copy2016-2017&nbsp&nbsp<i class="fa fa-html5" aria-hidden="true" id="footer-glyphs">&nbsp</i><i class="fa fa-css3" aria-hidden="true" id="footer-glyphs"></i></p>
   </footer>
   </div>
+
+<script> 
+$(document).ready(function() {
+  $('#menu').sidr();
+
+});
+</script>
+
+
 </body>
 </html>

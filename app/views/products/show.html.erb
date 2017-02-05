@@ -1,5 +1,4 @@
-
-<br >
+<br>
 <div class="container">
   <p class="show-page-words">
     <strong>Name:</strong>
@@ -13,25 +12,29 @@
   <p class="show-page-words">
       <strong>Colour:</strong><br>
       <p class="description">
-        <%= @product.colour %>
+       <em><%= @product.colour %></em>
        </p>
   </p>
   <p class="show-page-words">
       <strong>Description:</strong><br>
           <p class="description">
-          <%= @product.description %>
+         <em><%= @product.description %></em>
   	      </p>
   </p>
   <p class="show-page-words">
     <strong>PRICE:</strong><br>
       <p class="description">
-       MSRP: <%= @product.price %> <span class="glyphicon glyphicon-usd"></span>
+       <em>MSRP: <%= @product.price %><em> <span class="glyphicon glyphicon-usd"></span>
       </p>
   </p>
-  <h3>Reviews:</h3>
-
-   <div class="edit-form-links">
+     <div class="edit-form-links">
     <%= link_to 'Edit |', edit_product_path(@product) %> 
     <%= link_to '| Back', products_path %>
   </div>
+  <hr class="above -review">
+  <h3 class="reviews-start">Reviews</h3>
+  <%= render partial: "new_comment" %>
+  <br>
+  <%= render partial: "comments"%>
+  <br>
 </div>

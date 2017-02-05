@@ -227,3 +227,18 @@ ul li.menu-links:hover {
 	text-align: center;
 	
 }
+
+#login {
+	float: right;
+	clear: right;
+}
+
+
+#login2 {
+	float: right;
+	clear: right;
+	color: red;
+	font-family: Contrail One;
+	font-size: 1.25em;
+	margin-top: 10%;
+}
