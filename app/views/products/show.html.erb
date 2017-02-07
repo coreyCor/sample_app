@@ -25,6 +25,8 @@
     <strong>PRICE:</strong><br>
       <p class="description">
        <em>MSRP: <%= @product.price %><em> <span class="glyphicon glyphicon-usd"></span>
+        <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+       
       </p>
   </p>
      <div class="edit-form-links">
