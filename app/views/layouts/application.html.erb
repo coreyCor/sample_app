@@ -3,6 +3,7 @@
 <head>
   <title>Bike | | Berlin</title>
 
+
   <script src="https://use.fontawesome.com/09a16eb045.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Latest compiled and minified CSS -->
@@ -27,18 +28,21 @@
  </head>
 <body>
 
- <span class="glyphicon glyphicon-menu-hamburger" id="menu"></span>
- 
+  <script>
+$(document).ready(function() {
+  $('#menu').sidr();
+});
+</script>
 
-<div id="sidr">
-
+<span class="glyphicon glyphicon-menu-hamburger" id="menu"></span>
+ <div id="sidr">
   <p id="logo-menu"><i class="glyphicon glyphicon-globe">&nbsp</i>Bike Berlin</i></p>
-  <ul>
-    <li class= menu-links><%= link_to 'Home', static_pages_landing_page_path %></li>
-    <li class="menu-links"><%= link_to 'About Us', static_pages_about_path %></li>
-    <li class="menu-links"><%= link_to 'Contact', static_pages_contact_path %></li>
-    <li class="menu-links"><%= link_to 'Products', products_path %></li>
-    <li class="menu-links"><%= form_tag("/products", method: "get") do %>
+    <ul>
+      <li class= menu-links><%= link_to 'Home', static_pages_landing_page_path %></li>
+      <li class="menu-links"><%= link_to 'About Us', static_pages_about_path %></li>
+      <li class="menu-links"><%= link_to 'Contact', static_pages_contact_path %></li>
+      <li class="menu-links"><%= link_to 'Products', products_path %></li>
+      <li class="menu-links"><%= form_tag("/products", method: "get") do %>
             <%= label_tag(:q, "Search Bikes :") %>
             <%= text_field_tag (:q) %><br>
             <br >
@@ -49,14 +53,10 @@
     <%= link_to('Login', new_user_session_path, class: "btn btn-danger", id: "login") %>
   <% end %>
             <% end %>
-            <ul class="nav pull-right">
-</ul
-  </ul>
-</div>
-
-
- 
-
+    <ul class="nav pull-right">
+    </ul>
+    </ul>
+  </div><!-- end of sidr-->
 <%= yield %>
 <div class="container">
   <% if alert %>
@@ -86,14 +86,6 @@
   <footer><p class="foot-comp">coreyCutlipDesigns&copy2016-2017&nbsp&nbsp<i class="fa fa-html5" aria-hidden="true" id="footer-glyphs">&nbsp</i><i class="fa fa-css3" aria-hidden="true" id="footer-glyphs"></i></p>
   </footer>
   </div>
-
-<script> 
-$(document).ready(function() {
-  $('#menu').sidr();
-
-});
-</script>
-
 
 </body>
 </html>
