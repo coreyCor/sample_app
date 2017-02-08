@@ -3,31 +3,35 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.cent-text {
-    text-align: center;
-    font-family: Contrail One, Georgian, courier;
+    .cent-text {
+        text-align: center;
+        font-family: Contrail One, Georgian, courier;
    
-}
-
+    }
+    
     .reviews-start {
         text-align: left;
         font-family: Contrail One, Georgian, courier;
-     
-}
-
+    }
+    
     .above-review {
         width: 70%;
-}
-
-    div .rated {
-    text-align: center;
     }
-
+    
+    div .rated {
+        text-align: center;
+    }
+    
     .rating {
-    text-align: center;
+        text-align: center;
     }
     
     .paginate-links {
         text-align: center;
         padding: 5px;
+    }
+    
+    .glyphicon-trash {
+        color: red;
+        font-size: 1.5em;
     }

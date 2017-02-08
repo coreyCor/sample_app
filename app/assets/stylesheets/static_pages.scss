@@ -93,35 +93,31 @@
         text-shadow: 1px 1px black;
     }
     
-    
-    
     div.indexpage-link-products a:hover {
         text-decoration: none;
     }
     
     
-    
-    		
-		    @media (max-width: 767px) {
+    @media (max-width: 767px) {
 	    .featured-headline {
 		margin-top: 10%;
 	    }
     }
     
-            @media (max-width: 767px) {
-	    .about-headline {
+     @media (max-width: 767px) {
+	   .about-headline {
 		margin-top: 15%;
 	    }
     }
 	
-          	@media (max-width: 767px){
-        .carousel-caption {
-  display: none;
-       }
+	@media (max-width: 767px){
+            .carousel-caption {
+              display: none;
+           }
     }
     
-              	@media (max-width: 767px){
+    @media (max-width: 767px){
         .featured-headline {
-  font-size: 2em; 
-       }
+          font-size: 2em; 
+           }
     }

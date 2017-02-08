@@ -8,12 +8,17 @@ class CommentsController < ApplicationController
                 format.html { redirect_to @product, notice: "Your Comment Has Been Saved!"}
                 format.json { render :show, status: :created, location: @product }
             else 
-                format.html { redirect_to @product, alert: "Not Saved, Please Try Again" }
+                format.html { redirect_to @product, alert: "Something Went Wrong, Please Try Again." }
                 format.json { render :json, @comment.errors, status: :unprocessable_entity }
             end
         end
     end
     def destroy
+        @comment = Comment.find(params[:id])
+        product = @comment.product
+        @comment.destroy
+        redirect_to product
+        
     end
 
 

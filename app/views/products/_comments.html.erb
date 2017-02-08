@@ -9,6 +9,9 @@
             <div class="rated" data-score="<%= comment.rating %>"></div>
             </p>
         </div>
+        <% if signed_in? && current_user.admin?%>
+        <%= link_to  ('<span class="glyphicon glyphicon-trash"> Remove</span>').html_safe, product_comment_path(comment.product, comment), method: :delete, data: { confirm: 'Are You Sure?' } %>
+        <% end %>
     <% end %>
     <div class="paginate-links">
      <%= will_paginate @comments %>
