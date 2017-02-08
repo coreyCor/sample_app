@@ -23,7 +23,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @products = Product.all
-    @comments = @product.comments.order("created_at Desc")
+    @comments = @product.comments.order("created_at Desc").paginate(:page => params[:page], :per_page => 4)
   
   end
 
