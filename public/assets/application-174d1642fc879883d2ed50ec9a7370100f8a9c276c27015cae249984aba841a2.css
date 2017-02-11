@@ -1,0 +1,762 @@
+/* line 6, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+.cent-text {
+  text-align: center;
+  font-family: Contrail One, Georgian, courier;
+}
+
+/* line 12, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+.reviews-start {
+  text-align: left;
+  font-family: Contrail One, Georgian, courier;
+}
+
+/* line 17, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+.above-review {
+  width: 70%;
+}
+
+/* line 21, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+div .rated {
+  text-align: center;
+}
+
+/* line 25, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+.rating {
+  text-align: center;
+}
+
+/* line 29, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+.paginate-links {
+  text-align: center;
+  padding: 5px;
+}
+
+/* line 34, /home/ubuntu/workspace/app/assets/stylesheets/comments.scss */
+.glyphicon-trash {
+  color: red;
+  font-size: 1.5em;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+ 
+ 
+		//Product Page/
+		//---------------/
+
+
+
+	.product-box {
+		
+		margin: 1%;
+		margin-top: 15%;
+		border-bottom: 2px solid black;
+		background-color: red;
+		border-radius: 0px;
+		padding-bottom: 5px;
+	
+
+	}
+	
+	
+	
+	.desc {
+		background-color: #ccc;
+		padding: 2px;
+		border: 1px solid black;
+		border-radius: 0px;
+		font-weight: 700;
+		color: #000;
+		box-shadow: 0 0px 10px black;
+	
+	}
+
+
+
+	#product-header-photo {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		border-bottom: 1px solid red;
+		box-shadow: 0 0 15px 0 grey;
+	}
+	
+	
+	
+	.new-product-link {
+		float: right;
+		margin-top: 30%;
+
+	}
+	
+	
+	
+	.product-tile-links a {
+		
+		font-family: Contrail One, Georgian, roboto, sans-serif;
+		font-size: 1.5em;
+	    color: red;
+	    text-shadow: 1px 1px #000;
+	    padding-right: 7px;
+	}
+	
+	
+	
+  	.product-tile-links a:hover{
+		text-decoration: none;	
+	}
+	
+	
+	
+	.product-tile-links {
+		text-align: center;
+	    margin-bottom: 15%;
+	}
+	
+	
+	
+	.product-page-header {
+		color: red;
+		padding: 5px;
+		font-size: 3em;
+		margin-top: 3%;
+		font-family: Contrail One, Roboto, Courier, sans-serif;
+		text-shadow: 2px 2px #000;
+	}
+	
+	
+		
+	#new-product-button a:hover  {
+			
+		color: black;
+		text-decoration: none;
+	}
+		
+		
+		
+	#new-product-button a {
+	    color: black;
+			
+    }
+    
+	
+		
+	#new-product-button {
+		float: left;
+		clear: left;
+		margin-top: 10%;
+		border: 1px solid black;
+		box-shadow: 0 0 10px 0 grey;
+		margin-left: 5%;
+		background-color: red;
+		font-family: Contrail One, Georgian, Serif, Sans Serif;
+	}	
+		
+		/*End of products Page */
+	
+	
+		/*---------------------*/
+		 
+		 
+		/* shared Form Layoout*/
+		
+	
+	
+    .form-mover {
+		display: block;
+		margin-left: 43%;
+	}
+		
+		
+	
+	.edit-form-header {
+		text-align: center;
+		font-size: 3em;
+		font-family: contrail One, Roboto;
+		margin: 5%;
+		}
+	 	
+	
+	
+	#buton-submit {
+		padding: 2%;
+		
+	}
+	
+	
+
+    div.edit-form-links {
+	    text-align: center;
+	
+    }
+    
+    
+    
+    div.edit-form-links a {
+		text-align: center;
+		font-size: 1.5em;
+		color: black;
+	}
+		
+	
+	
+    div.edit-form-links a:hover {
+		text-decoration: none;
+		
+	}
+	
+	
+    
+    
+    
+    div.new-form-links a {
+	
+		font-size: 1.5em;
+		color: black;
+	}
+		
+	
+	
+    div.new-form-links a:hover {
+		text-decoration: none;
+		
+	}
+	
+
+
+	
+	
+	
+	
+   @media (max-width: 767px) {
+	.form-mover {
+		margin-left: 20%;
+	}
+}
+
+
+
+		/*End of shared Form*/
+		
+		
+		
+		/*show-page*/
+		
+		
+		 div.show-page-img-holder {
+			
+			margin-left: 35%;
+		}
+		
+		.show-page-words {
+			font-size: 1.75em;
+			font-family: Contrail One, Roboto, Geogian, sans-serif;
+		}
+		
+		 @media (max-width: 767px) {
+	   div.show-page-img-holder {
+		margin-left: 10%;
+	    }
+    }
+		
+		
+		/*end of show page*/
+		
+		
+		
+		
+		#index-page-img {
+			position: relative;
+			margin-right: auto;
+			margin-left: auto;
+			height: 50%;
+			width: 50%;
+			border: 2px solid red;
+		}
+		
+		
+				
+		 @media (max-width: 767px) {
+	       p.featured-headline {
+		   margin-top: 15%;
+	    }
+    }
+		
+		
+		.form-control {
+		
+			margin-top: 1%;
+			margin-bottom: 2%;
+			width: 50%;
+		}
+		
+		
+		
+		.btn-danger {
+			border-radius: 0px;
+		}
+		
+	.paginate-links {
+			font-family: Courier, Contrail One, Helvetica;
+			font-size: 1.5em;
+			font-weight: bold;
+			
+		}
+		
+	#show-page-name {
+		font-family: Contrail One, Courier, Sans Serif;
+		font-size: 2em;
+		
+	}
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 24, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 28, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 35, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 75, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 6, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.well-lg {
+  margin-top: 5%;
+}
+
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.thank-top {
+  text-align: center;
+  font-family: Contrail One, Georgian, sans serif;
+  font-size: 2.5em;
+  margin-top: 10%;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.car-img {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5%;
+}
+
+/* line 28, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+#wha {
+  position: relative;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+/* line 33, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  color: white;
+  font-weight: 700;
+  padding: 2.5px;
+  font-size: 1.5em;
+  font-family: Contrail One;
+  text-align: center;
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 5px;
+  border: 2px solid red;
+  margin-bottom: 2%;
+}
+
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators li {
+  border: 1px solid red;
+}
+
+/* line 55, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.featured-headline {
+  text-align: center;
+  font-family: Contrail One, Roboto, Serif;
+  font-size: 3em;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+/* line 64, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.about-headline {
+  text-align: center;
+  font-family: Contrail One, Roboto, Serif;
+  font-size: 3em;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+/* line 72, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+#about-pic {
+  border: 2px solid #000;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px 0 black;
+}
+
+/* line 82, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.indexpage-link-products {
+  text-align: center;
+  margin-top: 3%;
+}
+
+/* line 89, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.indexpage-link-products a {
+  color: red;
+  font-size: 2em;
+  font-family: Contrail One, Roboto;
+  text-shadow: 1px 1px black;
+}
+
+/* line 96, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+div.indexpage-link-products a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  /* line 102, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  .featured-headline {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 108, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  .about-headline {
+    margin-top: 15%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 114, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  .carousel-caption {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  /* line 120, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  .featured-headline {
+    font-size: 2em;
+  }
+}
+/* line 6, /home/ubuntu/workspace/app/assets/stylesheets/users.scss */
+.user-wrapper {
+  margin-top: 5%;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+	body {
+		background-color: #fff;
+
+	}
+/*     NAV   */
+
+	.contact-info {
+ 		font-family: courier, georgian, Helvetica;
+ 		margin-top: 3%;
+ 	 }
+ 	 
+	.central-img {
+		border: 1px solid black;
+		box-shadow: 0 0 10px 0 black;
+		width: 100px;
+		display: block;
+		height: 40%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5%;
+	}
+	
+	#pics {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5%;
+	}
+
+	p {
+		text-align: center ;
+	}
+	
+	#glyph {
+		color: #000;
+	}
+	
+	#about-par {
+		font-family: courier, georgian , Helvetica;
+		color: #000000;
+		margin-bottom: 5%;
+		font-size: 1.1em;
+	}
+	
+	.footer-starts {
+		border: 4px double #ccc;
+		width: 80%;
+		margin-top: 10%;
+	}
+
+	.cont-starts {
+		border: 4px double #ccc;
+		width: 80%;
+		margin-bottom: 10%;
+		margin-top: 5%;
+	}
+	
+	.foot-comp {
+		font-size: .80em;
+		color: #000;
+		font-family: courier, sans serif, seriif, georgian ;
+		} 
+		
+	footer {
+		margin-top: 1%;
+		color: #000000;
+		font-size: 1.2em;
+	}
+	
+	#back-button {
+		margin-top: 5%;
+		background-color: #afb42b;
+		border: 1px solid black;
+		border-radius: 3px;
+	}
+
+	#menu {
+		font-size: 2em;
+		margin-top: 2%;
+		margin-left: 2%;
+		cursor: pointer;
+		position: fixed;
+		z-index: 1;
+		color: #000;
+		border: 2px solid black;
+		border-radius: 5px;
+	}
+
+	#sidr ul {
+		margin-top: 33px;
+	}
+
+	.menu-links {
+		font-family: Contrail One;
+		font-size: 1.5em;
+		
+	}
+
+	ul li.menu-links:hover {
+		background-color: purple;
+	
+	}
+
+	.btn-danger {
+		margin-left: 5%;
+		margin-top: 5%;		
+		border: 1px solid black;
+		box-shadow: 0 0 10px 0 grey;
+		background-color: red;		
+		font-family: Contrail One, Georgian, Serif, Sans Serif;
+		color: #000;
+	}
+
+	.btn-danger:hover {
+		background-color: red;
+		color: black;
+		box-shadow: 0 0 5px 0 grey ; 
+		border: 0.5px solid black;
+	}
+
+	.btn-danger:active {
+		background-color: red;
+		color: black;
+	}
+	#q {
+		border-radius: 10px;
+		border: 2px solid #46b8da;
+ 	}
+ 	form label {
+    	font-size: 2em;
+    	font-family: Contrail One, Georgian, sans-serif;
+	 	}
+	 	
+	.bb {
+		float:right;
+	}
+	
+	.btn-info {
+		border: 1px solid black;
+		box-shadow: 0 0 7px 0 #ccc;
+		color: black;
+		font-family: Contrail One, Serif, Georgian, Helvetica;
+	}
+	
+	#logo-menu {
+		font-family: Contrail One, sans-serif, Courier;
+		font-size: 1.8em;
+		padding-top: 20px;
+		text-align: center;
+	}
+	
+	#login {
+		float: right;
+		clear: right;
+	}
+	
+	#login2 {
+		float: right;
+		clear: right;
+		color: red;
+		font-family: Contrail One;
+		font-size: 1.25em;
+		margin-top: 10%;
+	}
+	
+	@media (max-width: 767px) {
+		h1 {
+			margin-top: 10%;
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.cont-starts {
+		margin-top: 25%;
+		}
+	}
+	
+		@media (max-width: 767px) {
+		form label {
+			font-size: 1em;
+		
+		}
+	}
