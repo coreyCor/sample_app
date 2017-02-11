@@ -4,19 +4,19 @@
      <div class="product-box">
       <%= image_tag(product.image_url, class: "img-responsive tile-img") %>
        <p class="desc">
-       <%= product.name %><br >
-       MSRP: <%= product.price %> $
-       </p>
-   </div><!--tile-->
-        <div class="product-tile-links">
-        <%= link_to 'View', product %>
-        <% if signed_in? && current_user.admin? %>
-        <%= link_to 'Edit', edit_product_path(product) %>
-         <%= link_to 'Delete', product, method: :delete,
-         data: { confirm: 'Are you sure?' } %>
-         <% end %>
-         </div><!--prod-tile-links-->
- </div><!--col-->
+         <%= product.name %><br >
+          MSRP: <%= product.price %> $
+        </p>
+    </div><!--p box-->
+     <div class="product-tile-links">
+      <%= link_to 'View', product %>
+      <% if signed_in? && current_user.admin? %>
+       <%= link_to 'Edit', edit_product_path(product) %>
+       <%= link_to 'Delete', product, method: :delete,
+        data: { confirm: 'Are you sure?' } %>
+     <% end %>
+     </div><!--prod-tile-links-->
+  </div><!--col-->
 
  
 

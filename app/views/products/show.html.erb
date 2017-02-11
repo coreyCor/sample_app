@@ -2,9 +2,9 @@
 <div class="container">
   <p class="show-page-words">
     <strong>Name:</strong>
-      <p class="description">
-      <%= @product.name %>
-  </p>
+    <p class="description">
+    <%= @product.name %>
+    </p>
   </p>
   <div class="show-page-img-holder"><br>
     <%= image_tag(@product.image_url, class: "img-responsive", id: "show-img")%>
@@ -23,20 +23,19 @@
   </p>
   <p class="show-page-words">
     <strong>PRICE:</strong><br>
-      <p class="description">
-       <em>MSRP: <%= @product.price %><em> <span class="glyphicon glyphicon-usd"></span>
-        <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
-       
-      </p>
+    <p class="description">
+      <em>MSRP: <%= @product.price %><em> <span class="glyphicon glyphicon-usd"></span>
+       <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+    </p>
   </p>
-     <div class="edit-form-links">
-       <% if signed_in? && current_user.admin? %>
-    <%= link_to 'Edit ', edit_product_path(@product) %>
+  <div class="edit-form-links">
+    <% if signed_in? && current_user.admin? %>
+      <%= link_to 'Edit ', edit_product_path(@product) %>
     <% end %>
     <%= link_to ' Back', products_path %>
   </div>
   <hr class="above -review">
-  <h3 class="reviews-start">Reviews:</h3>
+<h3 class="reviews-start">Reviews:</h3>
   <%= render partial: "new_comment" %>
   <br>
   <%= render partial: "comments"%>

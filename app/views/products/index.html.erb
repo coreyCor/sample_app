@@ -1,22 +1,19 @@
 
   <%= image_tag("product-page-header.jpg", class: "img-responsive", id: "product-header-photo") %>
-    <div class="container">
-         <p class="product-page-header">Our Bikes</p><br>
-         <div class="row">
-            <% @products.each do |product| %>
-            <%= render partial: "product", locals: {product: product} %>
-    <% end %>
-
- <button class="btn btn-info" id="new-product-button"><%= link_to 'New Product', new_product_path %>
- 
-         </div>
-        <%= form_tag("/products", method: "get", class: "bb" ) do %>
-            <%= label_tag(:q, "Search Bikes:") %>
-            <%= text_field_tag (:q) %><br>
-            <br >
-            <%= submit_tag("Search", class: "btn btn-info")%>
-            <% end %>
-   
-     </div><!--cont-->
+  <div class="container">
+    <p class="product-page-header">Our Bikes</p><br>
+  <div class="row">
+     <% @products.each do |product| %>
+     <%= render partial: "product", locals: {product: product} %>
+     <% end %>
+  <button class="btn btn-info" id="new-product-button"><%= link_to 'New Product', new_product_path %>
+   </div>
+  <%= form_tag("/products", method: "get", class: "bb" ) do %>
+   <%= label_tag(:q, "Search Bikes:") %>
+    <%= text_field_tag (:q) %><br>
+    <br >
+    <%= submit_tag("Search", class: "btn btn-info")%>
+  <% end %>
+ </div><!--cont-->
 
  	
