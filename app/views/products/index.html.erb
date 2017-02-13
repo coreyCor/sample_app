@@ -6,7 +6,9 @@
      <% @products.each do |product| %>
      <%= render partial: "product", locals: {product: product} %>
      <% end %>
+     <% if user_signed_in? && current_user.admin?%>
   <button class="btn btn-info" id="new-product-button"><%= link_to 'New Product', new_product_path %>
+  <% end %>
    </div>
   <%= form_tag("/products", method: "get", class: "bb" ) do %>
    <%= label_tag(:q, "Search Bikes:") %>
