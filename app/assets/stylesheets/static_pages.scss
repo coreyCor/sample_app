@@ -98,11 +98,6 @@
     }
     
     
-    @media (max-width: 767px) {
-	    .featured-headline {
-		margin-top: 10%;
-	    }
-    }
     
      @media (max-width: 767px) {
 	   .about-headline {
@@ -120,4 +115,10 @@
         .featured-headline {
           font-size: 2em; 
            }
+    }
+    
+    
+    
+    #contact-section {
+        padding: 15%;
     }

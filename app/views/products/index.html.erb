@@ -4,9 +4,14 @@
     <p class="product-page-header">Our Bikes</p><br>
   <div class="row">
      <% @products.each do |product| %>
+
      <%= render partial: "product", locals: {product: product} %>
+
      <% end %>
-     <% if user_signed_in? && current_user.admin?%>
+      <% if  @products.empty? %>
+     <h1 class="no-results"> Sorry , No Matches Found... </h1></h1>
+     <% end %>
+     <% if signed_in? && current_user.admin?%>
   <button class="btn btn-info" id="new-product-button"><%= link_to 'New Product', new_product_path %>
   <% end %>
    </div>

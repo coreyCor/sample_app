@@ -90,32 +90,31 @@
 		border-radius: 3px;
 	}
 
-	#menu {
-		font-size: 2em;
-		margin-top: 2%;
-		margin-left: 2%;
-		cursor: pointer;
-		position: fixed;
-		z-index: 1;
-		color: #000;
-		border: 2px solid black;
-		border-radius: 5px;
-	}
-
-	#sidr ul {
-		margin-top: 33px;
-	}
-
-	.menu-links {
+	.menu-links a {
 		font-family: Contrail One;
 		font-size: 1.5em;
+		color: white;
 		
 	}
 
-	ul li.menu-links:hover {
-		background-color: purple;
-	
+	button.navbar-toggle {
+		margin-top: 2px;
 	}
+
+
+	ul li.menu-links:hover {
+		background-color: #ccc;
+		border-radius: 2px;
+		
+	}
+	
+	
+		ul li.menu-links:active {
+		background-color: #ccc;
+		border-radius: 2px;
+		
+	}
+	
 
 	.btn-danger {
 		margin-left: 5%;
@@ -135,13 +134,18 @@
 	}
 
 	.btn-danger:active {
-		background-color: red;
+
 		color: black;
 	}
+
+	
+	
 	#q {
 		border-radius: 10px;
 		border: 2px solid #46b8da;
  	}
+ 	
+ 	
  	form label {
     	font-size: 2em;
     	font-family: Contrail One, Georgian, sans-serif;
@@ -197,3 +201,64 @@
 		
 		}
 	}
+
+
+/* Fixed nav*/
+
+	#logo-nav {
+		font-size: 1.5em;
+		font-family: Contrail One, Contrail, Sans Serif, serif;
+		color: white;
+	}
+	
+	body {
+		margin-top: 50px;
+	}
+	
+	 ul .navbar-right .menu-links {
+	 	color: white;
+	 }
+	 
+		
+   .navbar-inverse .navbar-nav li a {
+	color: white;
+  }
+	
+   .navbar-inverse .navbar-nav li a em  {
+	color: white;
+  }
+
+  .navbar-inverse .navbar-nav li a:hover {
+	color: black;
+  }
+  
+	.navbar-inverse .navbar-nav li a:hover {
+		
+		text-decoration: none;
+	}  
+  .navbar-inverse {
+	background-color: #333;
+	box-shadow: 0 0 15px 0 black;
+  }
+
+  .nav-word {
+	color: white;
+	font-size: 1.5em;
+	font-family: Contrail One, Courier, Sans Serif; 
+	padding: 5px;
+	margin-top: 10px;
+	
+  }
+
+   .nav-search {
+	color: black;
+  }
+
+
+	@media (max-width: 767px) {
+		body {
+			margin-top: 60px;
+		}
+	}
+
+

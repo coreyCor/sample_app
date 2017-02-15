@@ -25,37 +25,42 @@
    <%= csrf_meta_tags %>
   <%= action_cable_meta_tag %>
  </head>
-<body>
-
-  <script>
-$(document).ready(function() {
-  $('#menu').sidr();
-});
-</script>
-
-<span class="glyphicon glyphicon-menu-hamburger" id="menu"></span>
- <div id="sidr">
-  <p id="logo-menu"><i class="glyphicon glyphicon-globe">&nbsp</i>Bike Berlin</i></p>
-    <ul>
-      <li class= menu-links><%= link_to 'Home', static_pages_landing_page_path %></li>
-      <li class="menu-links"><%= link_to 'About Us', static_pages_about_path %></li>
-      <li class="menu-links"><%= link_to 'Contact', static_pages_contact_path %></li>
-      <li class="menu-links"><%= link_to 'Products', products_path %></li>
-      <li class="menu-links"><%= form_tag("/products", method: "get") do %>
-            <%= label_tag(:q, "Search Bikes :") %>
+<body data-spy="scroll" data-target=".navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> 
+    <nav class="container-fluid">
+        <div class="navbar-header">
+          <ul class="nav-word">Bike || Berlin</li>
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div> <!--end projectName -->
+        </div> <!--end navbar-header -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+           <li class="menu-links"><%= link_to 'Home', static_pages_landing_page_path %></li><a href="/"></a>
+            <li class="menu-links"><%= link_to 'About Us', static_pages_about_path %></li><a href="/about"></a>
+             <li class="menu-links"><%= link_to 'Contact US', static_pages_contact_path %></li>
+            <li class="menu-links"><%= link_to 'Our Bikes', products_path %></li>
+            <li class="nav-links"><a class="dropdown-toggle" class="menu-links"data-toggle="dropdown" href="#"><em>search</em><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="b"><a class="drop-down-link"><!-- search here -->
+          <%= form_tag("/products", method: "get") do %>
+            <%= label_tag(:q, "Search Inventory:", class: "nav-search") %>
             <%= text_field_tag (:q) %><br>
             <br >
             <%= submit_tag("Search", class: "btn btn-default")%>
-               <% if user_signed_in? %>
-    <%= link_to('Logout', destroy_user_session_path, :method => :delete, id: "login", class: "btn btn-danger") %>
-  <% else %>
-    <%= link_to('Login', new_user_session_path, class: "btn btn-danger", id: "login") %>
-  <% end %>
-            <% end %>
-    <ul class="nav pull-right">
-    </ul>
-    </ul>
-  </div><!-- end of sidr-->
+            
+            <% end %> </a></li> 
+        </ul>
+          <!--search -->
+        </ul><!--end of nav navbar-nav class-->
+      </div><!--end of collapse nav-->
+    </nav><!--end of cont fluid inside nav-->
+  </nav> <!--end of nav container--> 
 <%= yield %>
 <div class="container">
   <% if alert %>
@@ -74,10 +79,10 @@ $(document).ready(function() {
     </p>
 
 
- <%=link_to 'back' , :back, class: "btn btn-danger", id: 'back-but' %>
    <% if user_signed_in? %>
     <%= link_to('Logout', destroy_user_session_path, :method => :delete, id: "login2") %>
   <% else %>
+    <%= link_to('Sign Up',  new_user_registration_path, class: "btn btn-danger", id: "1")%>
     <%= link_to('Login', new_user_session_path, id: "login2") %>
   <% end %>
  

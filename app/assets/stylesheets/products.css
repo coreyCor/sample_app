@@ -241,7 +241,7 @@
 				
 		 @media (max-width: 767px) {
 	       p.featured-headline {
-		   margin-top: 15%;
+		   margin-top: 20%;
 	    }
     }
 		
@@ -270,4 +270,15 @@
 		font-family: Contrail One, Courier, Sans Serif;
 		font-size: 2em;
 		
+	}
+	
+	
+	.no-results {
+		text-align: center;
+		font-family: Contrail One, Courier, Helvetica;
+		
+	}
+	
+	 #q {
+		color: #000;
 	}

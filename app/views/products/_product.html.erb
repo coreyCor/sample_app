@@ -10,7 +10,7 @@
     </div><!--p box-->
      <div class="product-tile-links">
       <%= link_to 'View', product %>
-      <% if user_signed_in? && current_user.admin? %>
+      <% if signed_in? && current_user.admin? %>
        <%= link_to 'Edit', edit_product_path(product) %>
        <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %>
      <% end %>
