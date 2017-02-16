@@ -9,7 +9,7 @@
 
      <% end %>
       <% if  @products.empty? %>
-     <h1 class="no-results"> Sorry , No Matches Found... </h1></h1>
+     <h1 class="no-results"> Sorry , No Matches Found... </h1>
      <% end %>
      <% if signed_in? && current_user.admin?%>
   <button class="btn btn-info" id="new-product-button"><%= link_to 'New Product', new_product_path %>
