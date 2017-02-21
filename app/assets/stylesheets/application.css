@@ -216,7 +216,7 @@
 	}
 	
 	 ul .navbar-right .menu-links {
-	 	color: white;
+	 	color: black;
 	 }
 	 
 		
@@ -225,7 +225,7 @@
   }
 	
    .navbar-inverse .navbar-nav li a em  {
-	color: white;
+	color: black;
   }
 
   .navbar-inverse .navbar-nav li a:hover {
@@ -237,12 +237,13 @@
 		text-decoration: none;
 	}  
   .navbar-inverse {
+  	background-image:url("accentedbackground.png");
 	background-color: #333;
 	box-shadow: 0 0 15px 0 black;
   }
 
   .nav-word {
-	color: white;
+	color: black;
 	font-size: 1.5em;
 	font-family: Contrail One, Courier, Sans Serif; 
 	padding: 5px;
@@ -261,4 +262,25 @@
 		}
 	}
 
+
+	.forgot-password {
+		margin-left: 10%;
+	}
+	
+
+
+  @media (max-width: 767px) {
+	p.edit-form-header {
+    	margin-top: 25%;
+	}
+  }
+
+	.navbar-inverse .navbar-nav li a {
+		color: black;
+	}  
+  
+	.navbar-inverse .navbar-toggle .icon-bar{
+		background-color: black;
+	
+	}
 

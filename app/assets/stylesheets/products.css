@@ -208,7 +208,7 @@
 		
 		 div.show-page-img-holder {
 			
-			margin-left: 35%;
+			margin-left: 30%;
 		}
 		
 		.show-page-words {
@@ -237,11 +237,13 @@
 			border: 2px solid red;
 		}
 		
-		
+		 p.featured-headline {
+		 	margin-top: 10%;
+		 }
 				
 		 @media (max-width: 767px) {
 	       p.featured-headline {
-		   margin-top: 20%;
+		   margin-top: 25%;
 	    }
     }
 		
@@ -282,3 +284,18 @@
 	 #q {
 		color: #000;
 	}
+	
+	
+	 .glyphicon-menu-down {
+ 	float: right;
+ }
+ 
+ 	.show-page-words2 {
+ 	float: left;
+ 	font-size: 1.5em;
+ 	font-family: Contrail One, Geogian, Courier;
+ }
+ 
+ 	#heading-two {
+ 		background-image: url("accentedbackground.png");
+ 	 }

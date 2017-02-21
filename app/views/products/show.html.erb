@@ -9,17 +9,23 @@
   <div class="show-page-img-holder"><br>
     <%= image_tag(@product.image_url, class: "img-responsive", id: "show-img")%>
   </div>
-  <p class="show-page-words">
-      <strong>Colour:</strong><br>
-      <p class="description">
-       <em><%= @product.colour %></em>
-       </p>
-  </p>
-  <p class="show-page-words">
-      <strong>Description:</strong><br>
-          <p class="description">
-         <em><%= @product.description %></em>
-  	      </p>
+       <div class="panel panel-default">
+      <div class="panel-heading" roll="tab" id="heading-two">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+            <p class="show-page-words">Description<span class="glyphicon glyphicon-menu-down"></span></p>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo"> 
+        <div class="panel-body">
+            <p class="show-page-words2">Specs:</p><br >
+       <%= @product.description %>  
+       <p class="show-page-words">Color:  <%=@product.colour%></p>
+        </div>
+      </div>
+    </div>
   </p>
   <p class="show-page-words">
     <strong>PRICE:</strong><br>
@@ -28,6 +34,7 @@
        <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
     </p>
   </p>
+
   <div class="edit-form-links">
     <% if signed_in? && current_user.admin? %>
       <%= link_to 'Edit ', edit_product_path(@product) %>
